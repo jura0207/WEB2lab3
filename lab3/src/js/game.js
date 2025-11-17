@@ -55,10 +55,10 @@ function drawPaddle() {
     ctx.fillStyle = "white";
     ctx.fillRect(paddle.x, paddle.y, paddle.width, paddle.height);
 
-    ctx.fillStyle = "rgba(255,255,255,0.7)";
+    ctx.fillStyle = "rgba(255,255,255,1)";
     ctx.fillRect(paddle.x, paddle.y, paddle.width, 3);
 
-    ctx.fillStyle = "rgba(180,180,180,0.7)";
+    ctx.fillStyle = "rgba(180,180,180,1)";
     ctx.fillRect(paddle.x, paddle.y + paddle.height - 3, paddle.width, 3);
 }
 
@@ -66,11 +66,11 @@ function drawBall() {
     ctx.fillStyle = "white";
     ctx.fillRect(ball.x, ball.y, ball.width, ball.height);
 
-    ctx.fillStyle = "rgba(255,255,255,0.7)";
+    ctx.fillStyle = "rgba(255,255,255,1)";
     ctx.fillRect(ball.x, ball.y, ball.width, 2);
     ctx.fillRect(ball.x, ball.y, 2, ball.height);
 
-    ctx.fillStyle = "rgba(180,180,180,0.7)";
+    ctx.fillStyle = "rgba(180,180,180,1)";
     ctx.fillRect(ball.x, ball.y + ball.width - 2, ball.height, 2);
     ctx.fillRect(ball.x + ball.width - 2, ball.y, 2, ball.height);
 }
@@ -81,11 +81,11 @@ function drawBrick(brick) {
     ctx.fillStyle = brick.color;
     ctx.fillRect(brick.x, brick.y, brick.width, brick.height);
 
-    ctx.fillStyle = "rgba(255,255,255,0.4)";
+    ctx.fillStyle = "rgba(255,255,255,1)";
     ctx.fillRect(brick.x, brick.y, brick.width, 3);
     ctx.fillRect(brick.x, brick.y, 3, brick.height);
 
-    ctx.fillStyle = "rgba(0,0,0,0.3)";
+    ctx.fillStyle = "rgba(0,0,0,1)";
     ctx.fillRect(brick.x, brick.y + brick.height - 3, brick.width, 3);
     ctx.fillRect(brick.x + brick.width - 3, brick.y, 3, brick.height);
 }
