@@ -315,7 +315,7 @@ function initBricks() {
                 width: BRICK_WIDTH,
                 height: BRICK_HEIGHT,
                 alive: true,
-                color: colors[row]   // svaki red ima određenu boju
+                color: colors[row]
             };
         }
     }
